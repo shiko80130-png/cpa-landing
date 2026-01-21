@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تم قبولك مبدئيًا</title>
+  <title>You are nominated to win</title>
 
   <!-- SEO / Preview -->
-  <meta content="https://i.imgur.com/Psz9qeX.jpg" property="og:image">
-  <link rel="icon" href="https://i.imgur.com/Psz9qeX.jpg">
+  <meta content="https://modo3.com/thumbs/fit630x300/81043/1481118831/%D8%A3%D9%87%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" property="og:image">
+  <link rel="icon" href="https://modo3.com/thumbs/fit630x300/81043/1481118831/%D8%A3%D9%87%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@
     }
 
     .answer {
-      background: #ff5e00;
+      background: #28a745;
       margin: 10px auto;
       padding: 12px;
       border-radius: 6px;
@@ -65,10 +65,12 @@
       width: 90%;
       max-width: 400px;
       font-weight: 600;
+      color: #fff;
+      font-size: 16px;
     }
 
     .answer:hover {
-      background: #ff3c00;
+      background: #218838;
       transform: scale(1.05);
     }
 
@@ -82,7 +84,7 @@
 
     #progress {
       height: 6px;
-      background: #ff5e00;
+      background: #28a745;
       width: 0%;
       margin-bottom: 15px;
       border-radius: 10px;
@@ -90,22 +92,15 @@
     }
 
     #timer {
-      background: #e74c3c;
+      background: #ffc107;
       padding: 8px;
       border-radius: 8px;
       margin-bottom: 10px;
       font-weight: bold;
+      color: #000;
     }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q01YVEQHN0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q01YVEQHN0');
-</script></head>
+</head>
 
 <body>
 
@@ -114,43 +109,43 @@
 
     <div id="progress"></div>
 
-    <img src="https://i.imgur.com/Psz9qeX.jpg" alt="عرض">
+    <img src="https://modo3.com/thumbs/fit630x300/81043/1481118831/%D8%A3%D9%87%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Earn Money">
 
-    <div id="timer">⏳ العرض متاح لمدة: <span id="time">60</span> ثانية</div>
+    <div id="timer">⏳ The offer is available for a period of: <span id="time">60</span> second</div>
 
     <!-- Q1 -->
     <div class="question active">
-      <h2>هل تبحث عن فرصة عمل حقيقية الآن؟</h2>
-      <div class="answer" data-next="1">نعم</div>
+      <h2>Are you interested in making a profit?</h2>
+      <div class="answer" data-next="1">Yes</div>
     </div>
 
     <!-- Q2 -->
     <div class="question">
-      <h2>هل عمرك فوق 18 سنة؟</h2>
-      <div class="answer" data-next="2">نعم</div>
-      <div class="answer" data-next="2">لا</div>
+      <h2>Are you over 18 years old?</h2>
+      <div class="answer" data-next="2">Yes</div>
+      <div class="answer" data-next="2">No</div>
     </div>
 
     <!-- Q3 -->
     <div class="question">
-      <h2>حدد جنسك</h2>
-      <div class="answer" data-next="3">ذكر</div>
-      <div class="answer" data-next="3">أنثى</div>
+      <h2>Do you like your current job?</h2>
+      <div class="answer" data-next="3">Yes</div>
+      <div class="answer" data-next="3">No</div>
     </div>
 
     <!-- Q4 -->
     <div class="question">
-      <h2>اختر المجال المناسب لك</h2>
-      <div class="answer" data-next="4">وظائف عامة</div>
-      <div class="answer" data-next="4">عمالة / مهن</div>
-      <div class="answer" data-next="4">مكاتب / استقبال</div>
+      <h2>How much time can you dedicate each day?</h2>
+      <div class="answer" data-next="4">1-2 Hours</div>
+      <div class="answer" data-next="4">3-5 Hours</div>
+      <div class="answer" data-next="4">More than 5 hours</div>
     </div>
 
     <!-- Final -->
     <div class="question">
-      <h2>🎉 تم قبولك مبدئيًا</h2>
-      <p>اضغط أدناه لإكمال التسجيل خلال 30 ثانية</p>
-      <div class="answer" id="final">إكمال التسجيل الآن</div>
+      <h2>🎉 You have been provisionally nominated!</h2>
+      <p>Click below to access your special offer instantly</p>
+      <div class="answer" id="final">Register your phone number so we can contact you. 💰</div>
     </div>
 
   </div>
@@ -165,7 +160,8 @@
   answers.forEach(btn => {
     btn.onclick = () => {
       if (btn.id === 'final') {
-        window.location.href = "https://get.newgoua.xyz/?utm_medium=1bd90682517321531bb1934ffd588343d7bbfa27&utm_campaign=v2026";
+        // ضع هنا رابط CPA الخاص بك
+        window.location.href = "https://get.newgoua.xyz/?utm_medium=9efd424b20637a7ade55e9dc5a26f90b62437890&utm_campaign=vmoina";
         return;
       }
       questions[step].classList.remove('active');
